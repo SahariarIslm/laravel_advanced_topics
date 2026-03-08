@@ -2,11 +2,11 @@
 
 namespace App\Services\PaymentServices;
 
-class PaypalAPIService
+class PaypalAPIService implements PaymentServiceInterface
 {
-    public function processPayment()
+    public function checkout(): string
     {
-        // Payment logic here
-        return "Payment of $100 processed successfully";
+        return "You did checkout from PayPal";
     }
+
 }
